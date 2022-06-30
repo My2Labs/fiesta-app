@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { InventoryServiceService } from '../../inventory-service.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-main-page',
@@ -7,12 +10,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent implements OnInit {
 
-  constructor() { }
+  postFiesta: string[] = [];
+  fiesta: any;
+  name = '';
 
-  ngOnInit(): void {
+    post() {
+    this.postFiesta.push(this.fiesta);
   }
 
+  constructor(
+    private inventoryService: InventoryServiceService,
+    private router: Router
+  ) { }
+
+  ngOnInit() {
+
+   this.inventoryService.fetchFiesta().subscribe((theresponse: any) => {
+      console.log(theresponse.fiesta);
+      this.fiesta = theresponse.fiesta;
+    });
+  }
 }
+
+
 
 // import { Component, OnInit } from '@angular/core';
 // import { CommentsService } from 'src/app/comments.service';

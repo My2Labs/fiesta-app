@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { InventoryServiceService } from '../../inventory-service.service';
+import { Fiesta } from '../../inventory-service.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-inventory-list',
@@ -6,10 +10,29 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./inventory-list.component.css']
 })
 export class InventoryListComponent implements OnInit {
+  @Input() name!: string;
+  @Input() color!: string;
+  @Input() type!: string;
+  @Input() description!: string;
+  @Input() value!: number;
+  @Input() quantity!: number;
+  inventoryService: any;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+    ngAfterViewInit() {
+    return this.name, this.color, this.type, this.description, this.value, this.quantity;
+  }
+
+  addFiesta(newFiesta: Fiesta) {
+    this.inventoryService.addFiesta(newFiesta).subscribe((response: any) => {
+      this.router.navigateByUrl('/Fiesta');
+    });
+
+    console.log(newFiesta.name);
   }
 
 }

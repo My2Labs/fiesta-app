@@ -1,4 +1,4 @@
-.new-fiesta-input {
+.new-fiesta-form {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 100%;
@@ -64,7 +64,7 @@
   }
   
   @media screen and (max-width: 775px) {
-    .new-fiesta-input {
+    .new-fiesta-form {
       grid-template-rows: auto;
       grid-template-columns: 100%;
       width: 100%;

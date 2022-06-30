@@ -1,4 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import { InventoryServiceService } from '../../inventory-service.service';
+import { Fiesta } from '../../inventory-service.service';
+import { Router } from '@angular/router';
+
+const fiesta = {
+  name: '',
+  color: '',
+  type: '',
+  description: '',
+  value: '',
+};
 
 @Component({
   selector: 'app-inventory-input',
@@ -6,10 +17,47 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./inventory-input.component.css']
 })
 export class InventoryInputComponent implements OnInit {
+  fiestas: any;
 
-  constructor() { }
+  fiesta = {
+    name: '',
+    color: '',
+    type: '',
+    description: '',
+    value: '',
+    quantity: '',
+  };
+
+  constructor(
+    private inventoryService: InventoryServiceService,
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
+  }
+
+    getNewFiesta() {
+    this.router.navigateByUrl('/Fiesta');
+  }
+
+  addFiesta(newFiesta: Fiesta) {
+    this.inventoryService.addFiesta(newFiesta).subscribe((response) => {
+      window.location.reload();
+    });
+
+    console.log(newFiesta.name);
+  }
+
+  updateFiesta(fiesta: Fiesta) {
+    this.inventoryService.updateFiesta(fiesta).subscribe((response) => {
+      window.location.reload();
+    });
+  };
+
+  deleteFiesta(fiesta: Fiesta)  {
+    this.inventoryService.deleteFiesta(fiesta).subscribe((response) => {
+      window.location.reload();
+    });
   }
 
 }

@@ -1,6 +1,6 @@
 
 <div>
-    <form>
+    <form #deleteFiestaForm="ngForm" class="delete-fiesta" (ngSubmit)="deleteFiesta(deleteFiestaForm.value)">
       <label for="id">id</label>
       <input type="text" id="id" name="id" placeholder="id" ngModel>
     
@@ -9,17 +9,29 @@
     </div>
     
     <div>
-    <form>
+    <form #editFiestaForm="ngForm" class="edit-fiesta" (ngSubmit)="updateFiesta(editFiestaForm.value)">
       <label for="id">Id:</label>
       <input type="text" id="id" name="id" placeholder="id" ngModel>
     
       <label for="name">Name</label>
       <input type="text" id="name" placeholder="name" name="name" ngModel>
     
-      <label for="comment">Comment</label>
-      <input type="text" id="comment" placeholder="comment" name="comment" ngModel>
+      <label for="color">Color</label>
+      <input type="text" id="color" placeholder="color" name="color" ngModel>
+
+      <label for="type">Type</label>
+      <input type="text" id="type" placeholder="type" name="type" ngModel>
+
+      <label for="description">Description</label>
+      <input type="text" id="description" placeholder="description" name="description" ngModel>
+
+      <label for="value">Value</label>
+      <input type="text" id="value" placeholder="value" name="value" ngModel>
+
+      <label for="quantity">Quantity</label>
+      <input type="quantity" id="quantity" placeholder="quantity" name="quantity" ngModel>
     
-      <input class="button" type="submit" value="Update Comment">
+      <input class="button" type="submit" value="Update Fiesta">
     
     </form>
     </div>

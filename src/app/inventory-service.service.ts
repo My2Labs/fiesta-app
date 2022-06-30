@@ -9,20 +9,24 @@ type FiestaResponse = {
 export type Fiesta = {
   id: number;
   name: string;
-  
+  color: string;
+  type: string;
+  description: string;
+  value: number;  
+  quantity: number;
 };
 
 @Injectable({
   providedIn: 'root'
 })
-export class InventoryServiceService {
 
+export class InventoryServiceService {
   fiesta: Fiesta[] = [];
   findAll: any;
 
   constructor(private http: HttpClient) { }
 
-    fetchComments() {
+    fetchFiesta() {
     return this.http.get<FiestaResponse>(`${environment.fiestaEndpoint}/`);
   }
   addFiesta(fiesta: Fiesta) {

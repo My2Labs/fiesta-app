@@ -1,5 +1,5 @@
 <div class="input-fiesta">
-    <form>
+    <form #newFiestaForm="ngForm" class="new-fiesta-form" (ngSubmit)="addFiesta(newFiestaForm.value)">
       <label for="name">Name</label>
       <input type="text" class="name-section" name="name" required id="name" ngModel>
     
@@ -7,7 +7,16 @@
       <input type="text" class="color-section" name="color" required id="color" ngModel>
     
       <label for="type">Type</label>
-      <input type="text" class="type-section" name="type" id="type" ngModel>
+      <input type="text" class="type-section" name="type" required id="type" ngModel>
+
+      <label for="description">Description</label>
+      <input type="text" class="description-section" name="description" required id="description" ngModel>
+
+      <label for="value">Value</label>
+      <input type="number" class="value-section" name="value" required id="value" ngModel>
+
+      <label for="quantity">Quantity</label>
+      <input type="number" class="quantity-section" name="quantity" required id="quantity" ngModel>
     
       <input type="submit" id="submit" class="submit-button" value="Add Fiesta" />
     
