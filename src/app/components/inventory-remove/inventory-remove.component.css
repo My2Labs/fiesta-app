@@ -1,4 +1,4 @@
-.new-fiesta-input {
+.delete-form, .edit-form {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 100%;
@@ -7,15 +7,10 @@
     width: 100%;
   }
   
-  .input-fiesta {
-    display: block;
-    width: 100%;
-    margin-top: 100px;
-  }
   
   form {
+    display: flex;
     width: 50%;
-  
   }
   
   
@@ -25,13 +20,14 @@
     border-radius: 4px;
     background-color: rgba(192, 192, 192, 0.199);
     height: 3em;
-  }
-  
-  label, input {
-    width: 70%;
+    width: 100px;
     text-align: center;
     margin: 10px;
     margin-right: 3em;
+  }
+  
+  label {
+    display: none;
   }
   
   p {
@@ -40,36 +36,26 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 17px;
     color: rgb(77, 77, 77);
+    text-align: center;
   }
   
   div {
-    display: block;
+    display: inline-block;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 17px;
     color: rgb(77, 77, 77);
-  }
-  
-
-  
-  .submit-button {
-    width: auto;
     text-align: center;
-    color: rgb(58, 58, 58);
+    padding-top: 200px;
   }
   
-  .submit-button:hover {
+  
+  .button {
+    width: 10em;
+    text-align: center;
+  }
+  
+  .button:hover {
     color: white;
     background-color: hsl(212, 94%, 40%);
   }
-  
-  @media screen and (max-width: 775px) {
-    .new-fiesta-input {
-      grid-template-rows: auto;
-      grid-template-columns: 100%;
-      width: 100%;
-    }
-  
-  }
-
-  

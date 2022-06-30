@@ -7,6 +7,7 @@ import { MainPageComponent } from './components/main-page/main-page.component';
 import { InventoryInputComponent } from './components/inventory-input/inventory-input.component';
 import { InventoryListComponent } from './components/inventory-list/inventory-list.component';
 import { InventoryComponent } from './components/inventory/inventory.component';
+import { InventoryRemoveComponent } from './components/inventory-remove/inventory-remove.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { InventoryComponent } from './components/inventory/inventory.component';
     MainPageComponent,
     InventoryInputComponent,
     InventoryListComponent,
-    InventoryComponent
+    InventoryComponent,
+    InventoryRemoveComponent
   ],
   imports: [
     BrowserModule,
