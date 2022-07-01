@@ -1,12 +1,14 @@
 p {
-    display: block;
-    padding: 15px;
-    background-color: rgba(123, 123, 228, 0.633);
+    display: flex;
+    padding: 10px;
+    background-color: rgba(12, 156, 105, 0.633);
     margin: 30px;
     border-radius: 15px;
     color: white;
     width: 140px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 div {
@@ -18,7 +20,12 @@ div {
 
 a {
     text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
+    font-weight: 700;
+    color: rgb(6, 67, 46);
+    text-align: center;
+    align-content: center;
 }
 
 a:hover {
@@ -37,7 +44,7 @@ a:hover {
     p {
         display: block;
         padding: 15px;
-        background-color: rgba(123, 123, 228, 0.633);
+        background-color: rgba(12, 156, 105, 0.633);
         margin: 10px;
         border-radius: 15px;
         color: white;
@@ -55,7 +62,7 @@ a:hover {
     p {
         display: block;
         padding: 15px;
-        background-color: rgba(123, 123, 228, 0.633);
+        background-color: rgba(12, 156, 105, 0.633);
         margin: 10px;
         border-radius: 15px;
         color: white;
