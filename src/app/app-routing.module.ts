@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainPageComponent } from '../app/components/main-page/main-page.component';
-import { InventoryListComponent } from '../app/components/inventory-list/inventory-list.component';
 import { InventoryInputComponent } from '../app/components/inventory-input/inventory-input.component';
 import { InventoryRemoveComponent } from '../app/components/inventory-remove/inventory-remove.component';
 import { SearchresultsComponent } from '../app/components/searchresults/searchresults.component';
@@ -18,10 +17,7 @@ const routes: Routes = [
     path: 'Inventory',
     component: MainPageComponent,
   },
-  {
-    path: 'List',
-    component: InventoryListComponent,
-  },
+
   {
     path: 'Input',
     component: InventoryInputComponent,

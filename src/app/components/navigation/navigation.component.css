@@ -1,7 +1,7 @@
 p {
     display: flex;
     padding: 10px;
-    background-color: rgba(12, 156, 105, 0.633);
+    background-color: rgba(50, 121, 202, 0.814);
     margin: 30px;
     border-radius: 15px;
     color: white;
@@ -9,6 +9,7 @@ p {
     text-align: center;
     justify-content: center;
     align-items: center;
+    border: 5px double white;
 }
 
 div {
@@ -23,7 +24,7 @@ a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     font-weight: 700;
-    color: rgb(6, 67, 46);
+    color: whitesmoke;
     text-align: center;
     align-content: center;
 }
@@ -44,14 +45,16 @@ a:hover {
     p {
         display: block;
         padding: 15px;
-        background-color: rgba(12, 156, 105, 0.633);
+        background-color: rgb(50, 122, 202);
         margin: 10px;
         border-radius: 15px;
         color: white;
         width: 100px;
         text-align: center;
-        
-    }
+        justify-content: center;
+        align-items: center;
+        border: 5px double white;
+   }
   }
 
   @media screen and (max-width: 450px) {
@@ -62,12 +65,14 @@ a:hover {
     p {
         display: block;
         padding: 15px;
-        background-color: rgba(12, 156, 105, 0.633);
+        background-color: rgb(50, 122, 202);
         margin: 10px;
         border-radius: 15px;
         color: white;
         width: 80%;
         text-align: center;
-        
+        justify-content: center;
+        align-items: center;
+        border: 5px double white;
     }
   }
