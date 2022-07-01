@@ -27,7 +27,7 @@ export class InventoryServiceService {
 
   constructor(private http: HttpClient) { }
 
-    fetchFiesta() {
+  fetchFiesta() {
     return this.http.get<FiestaResponse>(`${environment.fiestaEndpoint}/`);
   }
   addFiesta(fiesta: Fiesta) {
