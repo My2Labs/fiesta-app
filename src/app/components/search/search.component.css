@@ -15,19 +15,24 @@ form {
   }
   
   
-  input {
+input {
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
     background-color: rgba(192, 192, 192, 0.199);
     height: 3em;
+    text-align: left;
   }
   
-  label, input {
+  input {
     width: 70%;
-    text-align: center;
+    text-align: left;
     margin: 10px;
     margin-right: 3em;
+  }
+
+  label {
+    display: none;
   }
 
   .search-button {
@@ -41,3 +46,6 @@ form {
     background-color: hsl(212, 94%, 40%);
   }
 
+  @media screen and (max-width: 775px) {
+
+  }
