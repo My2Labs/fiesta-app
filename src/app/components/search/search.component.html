@@ -1,0 +1,10 @@
+<div class="searchformdiv">
+    <form #searchForm="ngForm" class="searchformdiv" (ngSubmit)="searchFiesta(searchForm.value)">
+      <label for="search-term">Search Fiesta</label>
+      <input id="search-term" name="searchTerm" type="search-term" placeholder="Name, Type, Color.. " class="searchbar" ngModel/>
+      <div>
+      <input type="submit" class="search-button" value="Search" />
+      </div>
+    </form>
+</div>
+<router-outlet></router-outlet>

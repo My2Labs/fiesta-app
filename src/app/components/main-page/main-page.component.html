@@ -1,11 +1,8 @@
 <h2>Fiesta Inventory</h2>
 
-  <div class="form-comment">
-    <app-inventory-input class="fiesta-form"></app-inventory-input>
-  </div>
-  <div class="fiesta-return">
-        
+<app-search></app-search>
 
+  <div class="fiesta-return">
     <div class="fiesta">
       <div *ngFor="let fiesta of fiesta" class="fiesta-list">
         <img *ngIf="fiesta.description"src="{{fiesta.description}}" alt="{{fiesta.name}}" />
@@ -16,21 +13,8 @@
         <p>Quantity: {{fiesta.quantity}}</p>
       </div>
     </div>
-
-    <!-- <div *ngFor="let fiesta of fiesta">
-        <app-inventory-list
-            [name]="fiesta.name"
-            [color]="fiesta.color"
-            [type]="fiesta.type"
-            [value]="fiesta.value"
-            [quantity]="fiesta.quantity"
-        ></app-inventory-list>
-    </div> -->
   </div>
 
 
 
 
-<div>
-  <app-inventory-remove></app-inventory-remove>
-</div> 

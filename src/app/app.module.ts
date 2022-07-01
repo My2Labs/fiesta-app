@@ -10,6 +10,9 @@ import { InventoryComponent } from './components/inventory/inventory.component';
 import { InventoryRemoveComponent } from './components/inventory-remove/inventory-remove.component';
 import { InventoryServiceService } from './inventory-service.service';
 import { HttpClientModule } from '@angular/common/http';
+import { NavigationComponent } from './components/navigation/navigation.component';
+import { SearchComponent } from './components/search/search.component';
+import { SearchresultsComponent } from './components/searchresults/searchresults.component';
 
 
 @NgModule({
@@ -19,7 +22,10 @@ import { HttpClientModule } from '@angular/common/http';
     InventoryInputComponent,
     InventoryListComponent,
     InventoryComponent,
-    InventoryRemoveComponent
+    InventoryRemoveComponent,
+    NavigationComponent,
+    SearchComponent,
+    SearchresultsComponent
   ],
   imports: [
     BrowserModule,
