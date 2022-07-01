@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { SearchComponent } from './components/search/search.component';
 import { SearchresultsComponent } from './components/searchresults/searchresults.component';
+import { FrontPageComponent } from './components/front-page/front-page.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { SearchresultsComponent } from './components/searchresults/searchresults
     InventoryRemoveComponent,
     NavigationComponent,
     SearchComponent,
-    SearchresultsComponent
+    SearchresultsComponent,
+    FrontPageComponent
   ],
   imports: [
     BrowserModule,

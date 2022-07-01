@@ -5,12 +5,17 @@ import { InventoryListComponent } from '../app/components/inventory-list/invento
 import { InventoryInputComponent } from '../app/components/inventory-input/inventory-input.component';
 import { InventoryRemoveComponent } from '../app/components/inventory-remove/inventory-remove.component';
 import { SearchresultsComponent } from '../app/components/searchresults/searchresults.component';
-
+import { NavigationComponent } from '../app/components/navigation/navigation.component';
 
 
 const routes: Routes = [
+
   {
-    path: 'Main',
+    path: '',
+    component: NavigationComponent,
+  },
+  {
+    path: 'Inventory',
     component: MainPageComponent,
   },
   {

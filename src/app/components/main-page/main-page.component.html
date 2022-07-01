@@ -1,17 +1,20 @@
+
+<app-navigation></app-navigation>
+
 <h2>Fiesta Inventory</h2>
 
 <app-search></app-search>
 
   <div class="fiesta-return">
     <div class="fiesta">
-      <div *ngFor="let fiesta of fiesta" class="fiesta-list">
+      <li *ngFor="let fiesta of fiesta" class="fiesta-list">
         <img *ngIf="fiesta.description"src="{{fiesta.description}}" alt="{{fiesta.name}}" />
         <h3 class="name">{{fiesta.name}}</h3>
         <p>Color: {{fiesta.color}}</p>
         <p>Type: {{fiesta.type}}</p>
         <p>Value (each): ${{fiesta.value}}</p>
         <p>Quantity: {{fiesta.quantity}}</p>
-      </div>
+      </li>
     </div>
   </div>
 

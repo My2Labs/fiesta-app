@@ -2,7 +2,9 @@ img {
     width: 100px;
 }
 li {
+    display: inline-block;
     list-style: none;
+    padding: 30px;
 }
 div {
     border: 2px solid black;

@@ -1,0 +1,43 @@
+.searchformdiv {
+    text-align: center;
+    display: block;
+}
+
+div {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    width: 100%;
+  }
+  
+  
+  input {
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: rgba(192, 192, 192, 0.199);
+    height: 3em;
+  }
+  
+  label, input {
+    width: 70%;
+    text-align: center;
+    margin: 10px;
+    margin-right: 3em;
+  }
+
+  .search-button {
+    width: auto;
+    text-align: center;
+    color: rgb(58, 58, 58);
+  }
+  
+  .search-button:hover {
+    color: white;
+    background-color: hsl(212, 94%, 40%);
+  }
+
