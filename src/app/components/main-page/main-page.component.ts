@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { InventoryServiceService } from '../../inventory-service.service';
+import { Component, Input, OnInit } from '@angular/core';
+import { Fiesta, InventoryServiceService } from '../../inventory-service.service';
 import { Router } from '@angular/router';
 
 
@@ -9,13 +9,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./main-page.component.css']
 })
 export class MainPageComponent implements OnInit {
+  @Input() fiesta: Fiesta[] = [];
 
   postFiesta: string[] = [];
-  fiesta: any;
+  fiestas: any;
   name = '';
 
     post() {
-    this.postFiesta.push(this.fiesta);
+    this.postFiesta.push(this.fiestas);
   }
 
   constructor(
@@ -26,8 +27,9 @@ export class MainPageComponent implements OnInit {
   ngOnInit() {
 
    this.inventoryService.fetchFiesta().subscribe((theresponse: any) => {
-      console.log(theresponse.fiesta);
-      this.fiesta = theresponse.fiesta;
+      console.log(theresponse.fiestas);
+      this.fiesta = theresponse.fiestas;
+      return theresponse;
     });
   }
 }
