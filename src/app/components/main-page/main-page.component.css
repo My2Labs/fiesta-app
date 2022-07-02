@@ -75,6 +75,10 @@ h2, h3 {
     border: 2px solid rgba(128, 128, 128, 0.577);
     background-color: whitesmoke;
   }
+
+  .itemid {
+    font-size: 7px;
+  }
   
   .comment-input {
     width: 100%;
@@ -191,7 +195,6 @@ h2, h3 {
       width: 50%;
       border: 2px solid silver;
       background-color: rgb(247, 244, 241);
-      filter: drop-shadow(0 0.7rem 1rem rgba(0, 0, 0, 0.9));
     }
   
     textarea {

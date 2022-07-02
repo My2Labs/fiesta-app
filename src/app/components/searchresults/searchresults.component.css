@@ -7,5 +7,8 @@ li {
     padding: 30px;
 }
 div {
-    border: 2px solid black;
+    display: flex;
 }
+.itemid {
+    font-size: 7px;
+  }
