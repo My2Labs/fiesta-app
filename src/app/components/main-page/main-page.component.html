@@ -9,9 +9,8 @@
     <div class="fiesta">
       <li *ngFor="let fiesta of fiesta" class="fiesta-list">
         <img *ngIf="fiesta.description"src="{{fiesta.description}}" alt="{{fiesta.name}}" />
-        <h3 class="name">{{fiesta.name}}</h3>
+        <h3 class="name">{{fiesta.type}}</h3>
         <p>Color: {{fiesta.color}}</p>
-        <p>Type: {{fiesta.type}}</p>
         <p>Value (each): ${{fiesta.value}}</p>
         <p>Quantity: {{fiesta.quantity}}</p>
         <p class="itemid">Item # {{fiesta.id}}</p>
