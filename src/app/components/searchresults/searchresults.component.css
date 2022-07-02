@@ -1,14 +1,23 @@
 img {
     width: 100px;
 }
+
 li {
     display: inline-block;
     list-style: none;
     padding: 30px;
 }
+
 div {
-    display: flex;
-}
+    display: block;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    color: rgb(77, 77, 77);
+    text-align: center;
+  }
+  
 .itemid {
-    font-size: 7px;
+    font-size: 10px;
+    color: white;
   }
