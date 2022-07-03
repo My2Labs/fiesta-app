@@ -11,7 +11,7 @@ export type Fiesta = {
   id: number;
   name: string;
   color: string;
-  type: string;
+  descriptors: string;
   description: string;
   value: number;  
   quantity: number;

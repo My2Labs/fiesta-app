@@ -8,8 +8,8 @@
   <div class="fiesta-return">
     <div class="fiesta">
       <li *ngFor="let fiesta of fiesta" class="fiesta-list">
-        <img *ngIf="fiesta.description"src="{{fiesta.description}}" alt="{{fiesta.type}}" />
-        <h2 class="name">{{fiesta.type}}</h2>
+        <img *ngIf="fiesta.description"src="{{fiesta.description}}" alt="{{fiesta.name}}" />
+        <h2 class="name">{{fiesta.name}}</h2>
         <p>Color: {{fiesta.color}}</p>
         <p>Value (each): ${{fiesta.value}}</p>
         <p>Quantity: {{fiesta.quantity}}</p>

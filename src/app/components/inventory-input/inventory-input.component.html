@@ -1,11 +1,11 @@
 <app-navigation></app-navigation>
 <div class="input-fiesta">
     <form #newFiestaForm="ngForm" class="new-fiesta-form" (ngSubmit)="addFiesta(newFiestaForm.value)">
-      <label for="type">Name:</label>
-      <input type="text" class="type-section" name="type" required id="type" ngModel>
-
-      <label for="name">Descriptors:</label>
+      <label for="name">Name:</label>
       <input type="text" class="name-section" name="name" required id="name" ngModel>
+
+      <label for="descriptors">Descriptors:</label>
+      <input type="descriptors" class="descriptors-section" name="descriptors" required id="descriptors" ngModel>
     
       <label for="color">Color:</label>
       <!-- <select id="colors" name="colors">
