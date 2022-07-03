@@ -4,23 +4,23 @@
     <form #editFiestaForm="ngForm" class="edit-fiesta" (ngSubmit)="updateFiesta(editFiestaForm.value)">
       <label for="id">Id:</label>
       <input type="text" id="id" name="id" placeholder="id" ngModel>
+
+      <label for="type">Name:</label>
+      <input type="text" id="type" placeholder="name" name="type" ngModel>
     
-      <label for="name">Name</label>
-      <input type="text" id="name" placeholder="name" name="name" ngModel>
+      <label for="name">Descriptors:</label>
+      <input type="text" id="name" placeholder="descriptors" name="name" ngModel>
     
-      <label for="color">Color</label>
+      <label for="color">Color:</label>
       <input type="text" id="color" placeholder="color" name="color" ngModel>
 
-      <label for="type">Type</label>
-      <input type="text" id="type" placeholder="type" name="type" ngModel>
+      <label for="description">Description or Image URL:</label>
+      <input type="text" id="description" placeholder="description or image url" name="description" ngModel>
 
-      <label for="description">Description</label>
-      <input type="text" id="description" placeholder="description" name="description" ngModel>
-
-      <label for="value">Value</label>
+      <label for="value">Value:</label>
       <input type="text" id="value" placeholder="value" name="value" ngModel>
 
-      <label for="quantity">Quantity</label>
+      <label for="quantity">Quantity:</label>
       <input type="quantity" id="quantity" placeholder="quantity" name="quantity" ngModel>
     
       <input class="button" type="submit" value="Update Fiesta">
