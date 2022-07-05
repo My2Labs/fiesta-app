@@ -17,14 +17,22 @@ export class InventoryRemoveComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // updateFiesta(fiesta: Fiesta) {
+  //   this.inventoryService.updateFiesta(fiesta).subscribe((response) => {
+  //     this.fiesta = [response.fiesta];
+  //   });
+  // };
+
   updateFiesta(fiesta: Fiesta) {
     this.inventoryService.updateFiesta(fiesta).subscribe((response) => {
-      this.fiesta = [response.fiesta];
+      window.location.reload();
     });
   };
 
   deleteFiesta(fiesta: Fiesta)  {
-    this.inventoryService.deleteFiesta(fiesta).subscribe((response) => {});
+    this.inventoryService.deleteFiesta(fiesta).subscribe((response) => {
+      window.location.reload();
+    });
   }
 
 }
