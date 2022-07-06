@@ -5,13 +5,14 @@ import { InventoryInputComponent } from '../app/components/inventory-input/inven
 import { InventoryRemoveComponent } from '../app/components/inventory-remove/inventory-remove.component';
 import { SearchresultsComponent } from '../app/components/searchresults/searchresults.component';
 import { NavigationComponent } from '../app/components/navigation/navigation.component';
+import { FrontPageComponent } from '../app/components/front-page/front-page.component';
 
 
 const routes: Routes = [
 
   {
     path: '',
-    component: NavigationComponent,
+    component: FrontPageComponent,
   },
   {
     path: 'Inventory',
