@@ -22,13 +22,15 @@
 
       <label for="quantity">Quantity:</label>
       <input type="quantity" id="quantity" placeholder="quantity" name="quantity" ngModel>
-    
+     <br>
       <input class="button" type="submit" value="Update Fiesta">
     </form>
+    </div>
+    <div>
     <form #deleteFiestaForm="ngForm" class="delete-fiesta" (ngSubmit)="deleteFiesta(deleteFiestaForm.value)">
       <label for="id">id</label>
       <input type="text" id="id" name="id" placeholder="id" ngModel>
-    
+    <br>
       <input class="button" type="submit" value="Remove Fiesta">
     </form>
     </div>
