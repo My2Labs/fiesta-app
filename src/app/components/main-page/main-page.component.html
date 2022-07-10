@@ -5,6 +5,14 @@
 
 <app-search></app-search>
 
+<!-- <div class="fiesta" *ngIf="values">
+  Total: {{values.length}}
+</div>
+
+<div>
+  <p>Total Value: </p>
+</div> -->
+
   <div class="fiesta-return">
     <div class="fiesta">
       <li *ngFor="let fiesta of fiesta" class="fiesta-list">
@@ -13,10 +21,21 @@
         <p>Color: {{fiesta.color}}</p>
         <p>Value (each): ${{fiesta.value}}</p>
         <p>Quantity: {{fiesta.quantity}}</p>
+        <p>Total Value: ${{fiesta.quantity * fiesta.value}}</p>
         <p class="itemid">Item # {{fiesta.id}}</p>
       </li>
     </div>
   </div>
+
+
+
+
+<div class="fiesta" *ngIf="values">
+      <p>Total:</p>
+</div>
+
+
+
 
 
 

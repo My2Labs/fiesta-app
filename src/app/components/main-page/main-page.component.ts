@@ -13,6 +13,7 @@ export class MainPageComponent implements OnInit {
 
   postFiesta: string[] = [];
   fiestas: any;
+  values: any;
   name = '';
 
     post() {
@@ -31,6 +32,17 @@ export class MainPageComponent implements OnInit {
       this.fiesta = theresponse.fiestas;
       return theresponse;
     });
+
+  
+
+    // this.inventoryService.fetchFiesta().subscribe((response: any) => {
+    //   let sum = 0;
+    //   let vallen = response.fiestas.value;
+    //   let quanlen = response.fiestas.quantity;
+    //   this.values = sum += (vallen * quanlen);
+    //   console.log(response.values);
+    //   return response;
+    // });
   }
 }
 

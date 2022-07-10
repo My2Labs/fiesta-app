@@ -15,6 +15,7 @@ export type Fiesta = {
   description: string;
   value: number;  
   quantity: number;
+  totalvalue: number;
 };
 
 const fiestaEndpoint = environment.fiestaEndpoint;
