@@ -15,6 +15,7 @@ export class MainPageComponent implements OnInit {
   fiestas: any;
   values: any;
   name = '';
+  filteredProducts: any[] = [];
 
     post() {
     this.postFiesta.push(this.fiestas);
@@ -33,6 +34,8 @@ export class MainPageComponent implements OnInit {
       return theresponse;
     });
 
+    
+
   
 
     // this.inventoryService.fetchFiesta().subscribe((response: any) => {
@@ -44,6 +47,15 @@ export class MainPageComponent implements OnInit {
     //   return response;
     // });
   }
+
+  getTotal() {
+		var total = 0;
+		for(var i = 0; i < this.fiesta.length; i++) {
+			var product = this.fiesta[i];
+			total += (product.value * product.quantity);
+		}
+		return total;
+	}
 }
 
 

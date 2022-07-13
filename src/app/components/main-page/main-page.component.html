@@ -25,14 +25,15 @@
         <p class="itemid">Item # {{fiesta.id}}</p>
       </li>
     </div>
+    <p class="fiesta-total">Total Value For All Items: </p>
+    <p class="fiesta-total">{{ getTotal() | currency:'USD' : 'symbol':'1.2-2'}}</p>
+  
+
   </div>
 
 
 
 
-<div class="fiesta" *ngIf="values">
-      <p>Total:</p>
-</div>
 
 
 
