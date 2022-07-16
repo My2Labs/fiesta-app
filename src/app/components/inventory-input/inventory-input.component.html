@@ -1,49 +1,20 @@
 <app-navigation></app-navigation>
 <div class="input-fiesta">
     <form #newFiestaForm="ngForm" class="new-fiesta-form" (ngSubmit)="addFiesta(newFiestaForm.value)">
+      
+      <label for="itemid">Item ID:</label>
+      <input type="number" class="itemid-section" name="itemid" required id="itemid" ngModel>
+
+      
       <label for="name">Name:</label>
       <input type="text" class="name-section" name="name" required id="name" ngModel>
 
+      <label for="color">Color:</label>
+      <input type="text" class="color-section" name="color" required id="color" ngModel>
+
+
       <label for="descriptors">Descriptors:</label>
       <input type="descriptors" class="descriptors-section" name="descriptors" required id="descriptors" ngModel>
-    
-      <label for="color">Color:</label>
-      <!-- <select id="colors" name="colors">
-        <option value="Apricot">Apricot</option>
-        <option value="Black">Black</option>
-        <option value="Chartreuse">Chartreuse</option>
-        <option value="Chocolate">Chocolate</option>
-        <option value="Cinnabar">Cinnabar</option>
-        <option value="Cobalt">Cobalt</option>
-        <option value="Evergreen">Evergreen</option>
-        <option value="Flamingo">Flamingo</option>
-        <option value="Heather">Heather</option>
-        <option value="Ivory">Ivory</option>
-        <option value="Juniper">Juniper</option>
-        <option value="Lemongrass">Lemongrass</option>
-        <option value="Lilac">Lilac</option>
-        <option value="Marigold">Marigold</option>
-        <option value="Paprika">Paprika</option>
-        <option value="Peacock">Peacock</option>
-        <option value="Pearl Gray">Pearl Gray</option>
-        <option value="Peony">Peony</option>
-        <option value="Periwinkle">Periwinkle</option>
-        <option value="Persimmon">Persimmon</option>
-        <option value="Plum">Plum</option>
-        <option value="Rose">Rose</option>
-        <option value="Sapphire">Sapphire</option>
-        <option value="Scarlet">Scarlet</option>
-        <option value="Sea Mist">Sea Mist</option>
-        <option value="Shamrock">Shamrock</option>
-        <option value="Slate">Slate</option>
-        <option value="Sunflower">Sunflower</option>
-        <option value="Tangerine">Tangerine</option>
-        <option value="Turquoise">Turquoise</option>
-        <option value="Twilight">Twilight</option>
-        <option value="White">White</option>
-        <option value="Yellow">Yellow</option>
-      </select> -->
-      <input type="text" class="color-section" name="color" required id="color" ngModel>
     
       <label for="description">Description or Image URL:</label>
       <input type="text" class="description-section" name="description" required id="description" ngModel>
