@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  fiestaEndpoint: 'https://fiesta-inventory.herokuapp.com/api/fiesta',
+  fiestaEndpoint: 'https://hlc-fiesta.herokuapp.com/api/fiesta',
 };
 
 /*

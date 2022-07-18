@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  fiestaEndpoint: 'https://fiesta-inventory.herokuapp.com/api/fiesta',
+  fiestaEndpoint: 'https://hlc-fiesta.herokuapp.com/api/fiesta',
 
 };
